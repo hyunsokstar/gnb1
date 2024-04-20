@@ -8,6 +8,7 @@
 // export default ItemPage
 
 // src\app\[...item]\page.tsx
+
 'use client'
 import React, { useEffect } from 'react';
 import { ROUTE_PATH, isParentRoute, routes } from '../routes';
@@ -24,14 +25,10 @@ const ItemPage: React.FC<ItemPageProps> = ({ params: { item } }) => {
     console.log("path : ", path)
     const route = routes[path]
 
-
     if (!route || isParentRoute(route)) return null
     const { children: Component } = route
 
-
-
     return Component ? <Component /> : null
-
 
 };
 
