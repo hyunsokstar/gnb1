@@ -1,0 +1,46 @@
+aside {
+ --bg-default: #222;
+ --bg-list: #444;
+ --bg-list-disabled: #303030;
+ --bg-list-active: #58a;
+ --bg-list-open: #457;
+
+ position: fixed;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ margin: 0;
+ padding: 0;
+ width: 199px;
+ border-right: 1px solid var(--bg-default);
+ background-color: var(--bg-default);
+ color: #fff;
+
+ a {
+  color: inherit;
+  text-decoration: none;
+ }
+
+
+ h1 {
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+
+  sub {
+   float: right;
+   color: yellow;
+   opacity: 1;
+  }
+ }
+
+}
+
+body > :not(aside) {
+  margin-left: 200px;
+}
+
+ul {
+ list-style: none;
+ background-color: var(--bg-list);
+}
